@@ -73,6 +73,17 @@
       overflow: hidden;
       white-space: nowrap;
       opacity: 1;
+
+      &.channel {
+        &:before {
+          font-family: 'evericons';
+          content: "\e92e";
+          font-size: 12px;
+          position: relative;
+          top: 1px;
+          margin-right: 4px;
+        }
+      }
     }
 
 
