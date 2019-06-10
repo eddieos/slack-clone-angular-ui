@@ -1,0 +1,150 @@
+.sidebar-header {
+  background-color: #3f0e40;
+  height: 62px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+
+  .organization-name {
+    font-weight: 900;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  .user-name {
+    color: #ab9ba9;
+    display: inline;
+    font-size: 14px;
+    padding-top: 6px;
+    align-items: center;
+  }
+
+  &:hover {
+    background-color: #350d36;
+
+    .user-name {
+      color: #ffffff;
+    }
+  }
+}
+
+.sidebar-container {
+  background-color: #350d36;
+  flex: 1;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+
+  .channel-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 1rem 4px;
+
+    a {
+      color: rgb(197, 183, 198);
+      width: 100%;
+      text-decoration: none;
+      transition: all 0.2s;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .list-item {
+    padding: 5px 0;
+    position: relative;
+    color: rgb(197, 183, 198);
+    transition: all 0.2s;
+
+    a {
+      color: rgb(197, 183, 198);
+      max-width: 220px;
+      display: flex;
+      padding: 0 1rem;
+      text-decoration: none;
+    }
+
+    .sidebar-name {
+      margin-right: auto;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      opacity: 1;
+    }
+
+
+    &:hover {
+      background-color: #281029;
+    }
+
+    &.active {
+      background-color: #1164A3;
+
+      a {
+        color: #ffffff;
+      }
+
+      &:hover {
+        background-color: #1164A3;
+      }
+    }
+
+    .message-count {
+      background: #dd2555;
+      border-radius: 16px;
+      color: #fff;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      height: 18px;
+      line-height: 18px;
+      margin-left: 4px;
+      padding: 0 9px;
+    }
+  }
+}
+
+.status {
+  height: 6px;
+  width: 6px;
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  border: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 4px;
+
+  &.online {
+    border: 1px solid #00a900;
+    background-color: #00a900;
+  }
+  &.offline {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+  }
+}
+
+.text-nowrap {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+button {
+  background-color: transparent;
+  color: #ab9ba9;
+  padding: 2px 0 0;
+  border: none;
+  transition: all 0.2s;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+

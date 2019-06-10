@@ -1,0 +1,18 @@
+.content-header {
+  background-color: #ffffff;
+  width: 100%;
+  height: 62px;
+  border-bottom: 1px solid #ddd;
+}
+
+.message-content {
+  flex: 1;
+  background-color: #ffffff;
+  overflow-y: scroll;
+}
+
+.message-input {
+  height: 66px;
+  background-color: aqua;
+  width: 100%;
+}
