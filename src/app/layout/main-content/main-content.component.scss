@@ -1,6 +1,7 @@
 .content-header {
   background-color: #ffffff;
-  width: 100%;
+  display: flex;
+  padding: 0 1rem;
   height: 62px;
   border-bottom: 1px solid #ddd;
 }
@@ -8,11 +9,13 @@
 .message-content {
   flex: 1;
   background-color: #ffffff;
+  padding: 2rem 1.25rem;
   overflow-y: scroll;
 }
 
 .message-input {
-  height: 66px;
-  background-color: aqua;
+  background-color: #ffffff;
   width: 100%;
+  border-top: 1px solid #fafafa;
+  padding: 0 1.25rem;
 }

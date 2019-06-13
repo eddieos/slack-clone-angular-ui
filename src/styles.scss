@@ -133,7 +133,7 @@ html {
  */
 
 a:focus {
-  outline: thin dotted;
+  outline: 0;
 }
 
 /**
@@ -374,4 +374,6 @@ body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
 }
+
+
 
