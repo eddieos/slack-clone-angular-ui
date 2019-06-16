@@ -1,6 +1,13 @@
 # AngularSlackUi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+This is a simple slack app ui clone. [DEMO](http://www.eddieos.me/slack-clone-angular-ui/). This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+
+
+## TODO
+- [ ] Route between  messages and channels
+- [ ] Search page component for users to send DM
+- [ ] Search page component for created channels to join any
+- [ ] Add channel page
 
 ## Development server
 
