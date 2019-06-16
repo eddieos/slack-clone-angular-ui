@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { IChatMessage } from '../components/chat-message/chat-message.component';
+import messages from 'src/app/constants/messages';
 
 @Component({
   selector: 'app-message',
@@ -6,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./message.component.scss']
 })
 export class MessageComponent implements OnInit {
+  userId: string;
+  messages: IChatMessage[] = messages
 
-  constructor() { }
+  constructor(private _activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this._activatedRoute.params.subscribe(params => {
+      this.userId = params.userId
+    })
   }
-
 }

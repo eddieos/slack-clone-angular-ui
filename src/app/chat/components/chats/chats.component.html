@@ -1,0 +1,8 @@
+<div class="title-divider">
+  <hr>
+  <div class="subtitle-container"><span class="subtitle">Tuesday, February 26th</span></div>
+</div>
+
+<div>
+  <chat-message *ngFor="let message of messages; let i=index" [chat]="message" [sameSender]="isSameSender(i)"></chat-message>
+</div>

@@ -1,3 +1,14 @@
-<p>
-  message works!
-</p>
+<chat-header class="chat-header" type='message' [title]="userId"></chat-header>
+
+<div class="chat-content">
+  <h2 class="message-title">{{userId}}</h2>
+  <div class="">
+    This is the very beginning of your direct message history with <a href="#" class="user-highlight">{{userId}}</a>
+  </div>
+
+  <chats [messages]="messages"></chats>
+</div>
+
+<div class="chat-input">
+  <textarea name="" id=""></textarea>
+</div>

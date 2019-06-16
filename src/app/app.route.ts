@@ -9,7 +9,7 @@ const APP_ROUTES: Routes = [
         children: [
             { path: '', redirectTo: 'channel/general', pathMatch: 'full' },
             { path: 'channel/:channel', component: ChannelComponent },
-            { path: 'message/:user', component: MessageComponent }
+            { path: 'message/:userId', component: MessageComponent }
         ]
     }
 

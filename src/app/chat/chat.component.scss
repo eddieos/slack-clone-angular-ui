@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 .sidebar {
   width: 220px;
   position: relative;
@@ -5,6 +11,7 @@
   flex-direction: column;
   background-color: #3f0e40;
 }
+
 .main-content {
   background-color: azure;
   width: 100%;

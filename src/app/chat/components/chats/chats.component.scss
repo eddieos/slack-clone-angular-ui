@@ -1,0 +1,22 @@
+.title-divider {
+    hr {
+      border: none;
+      border-bottom: 1px solid #ddd;
+      margin: 1rem -1.25rem;
+      padding: 20px 0;
+    }
+  
+    .subtitle-container {
+      justify-content: center;
+      display: flex;
+  
+      .subtitle {
+        background-color: #ffffff;
+        position: relative;
+        font-size: 14px;
+        font-weight: bold;
+        top: -24px;
+        padding: 0 8px;
+      }
+    }
+  }
