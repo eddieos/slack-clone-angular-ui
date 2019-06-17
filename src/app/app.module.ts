@@ -9,13 +9,13 @@ import { ContentHeaderComponent } from './layout/main-content/content-header/con
 import { MessageContentComponent } from './layout/main-content/message-content/message-content.component';
 import { MessageInputComponent } from './layout/main-content/message-input/message-input.component';
 import { RouterModule } from '@angular/router';
-import APP_ROUTES from './app.route';
 import { ChatComponent } from './chat/chat.component';
 import { ChannelComponent } from './chat/channel/channel.component';
 import { MessageComponent } from './chat/message/message.component';
 import { HeaderComponent } from './chat/components/header/header.component';
 import { ChatMessageComponent } from './chat/components/chat-message/chat-message.component';
 import { ChatsComponent } from './chat/components/chats/chats.component';
+import { APP_ROUTES } from './app.route';
 
 @NgModule({
   declarations: [

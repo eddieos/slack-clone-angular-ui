@@ -3,7 +3,7 @@ import { ChatComponent } from './chat/chat.component';
 import { ChannelComponent } from './chat/channel/channel.component';
 import { MessageComponent } from './chat/message/message.component';
 
-const APP_ROUTES: Routes = [
+export const APP_ROUTES: Routes = [
     {
         path: 'app', component: ChatComponent, 
         children: [
@@ -15,6 +15,3 @@ const APP_ROUTES: Routes = [
 
     // search for channel /  dms routes here
 ]
-
-
-export default APP_ROUTES
