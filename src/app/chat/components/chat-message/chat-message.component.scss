@@ -1,0 +1,57 @@
+.message-block {
+    display: flex;
+    padding: 12px 1.25rem;
+    margin: 0 -1.25rem;
+  
+    &:hover {
+      background-color: #fafafa;
+    }
+  }
+
+  .user-avatar {
+    img {
+      height: 36px;
+      width: 36px;
+      border-radius: 3px;
+    }
+  }
+
+  .message-text {
+    padding-left: 8px;
+  
+    .user-name {
+      font-weight: bold;
+      font-size: 15px;
+      margin-right: 4px;
+      color: #222222;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    .timestamp {
+      color: #6a696a;
+      font-weight: normal;
+      font-size: 12px;
+    }
+  
+    .message {
+      margin-top: 6px;
+      position: relative;
+  
+      .timestamp {
+        opacity: 0;
+        position: absolute;
+        left: -52px;
+        top: 3px;
+      }
+  
+      &:hover {
+        .timestamp {
+          opacity: 1;
+        }
+      }
+    }
+  }

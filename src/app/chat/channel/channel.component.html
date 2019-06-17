@@ -1,0 +1,14 @@
+<chat-header class="chat-header" type='channel' [title]="channelId"></chat-header>
+
+<div class="chat-content">
+  <h2 class="message-title channel">{{channelId}}</h2>
+  <div class="">
+      <a href="#" class="user-highlight">Endurance Ekhoragbon</a>  created this channel on February 26th. This is the very beginning of the <span class="channel">{{channelId}}</span> channel
+    </div>
+
+  <chats [messages]="messages"></chats>
+</div>
+
+<div class="chat-input">
+  <textarea name="" id=""></textarea>
+</div>

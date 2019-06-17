@@ -1,0 +1,17 @@
+<div class="message-block">
+  <a href="#" class="user-avatar" [hidden]="sameSender">
+    <img [src]="chat.image" alt="">
+  </a>
+
+  <div class="message-text">
+    <div *ngIf="!sameSender">
+      <a href="#" class="user-name">{{chat.username}}</a>
+      <span class="timestamp">{{chat.timestamp | date:'h:mm aaa'}}</span>
+      <div class="message" [innerHTML]="chat.message"></div>
+    </div>
+    <div *ngIf="sameSender" class="message">
+      <span class="timestamp">{{chat.timestamp | date:'h:mm aaa'}}</span>  
+      <span [innerHTML]="chat.message"></span>
+    </div>
+  </div>
+</div>

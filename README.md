@@ -4,7 +4,7 @@ This is a simple slack app ui clone. [DEMO](http://www.eddieos.me/slack-clone-an
 
 
 ## TODO
-- [ ] Route between  messages and channels
+- [x] Route between  messages and channels
 - [ ] Search page component for users to send DM
 - [ ] Search page component for created channels to join any
 - [ ] Add channel page
