@@ -8,7 +8,7 @@ const APP_ROUTES: Routes = [
         path: 'app', component: ChatComponent, 
         children: [
             { path: '', redirectTo: 'channel/general', pathMatch: 'full' },
-            { path: 'channel/:channel', component: ChannelComponent },
+            { path: 'channel/:channelId', component: ChannelComponent },
             { path: 'message/:userId', component: MessageComponent }
         ]
     }

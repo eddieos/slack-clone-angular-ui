@@ -1,0 +1,10 @@
+    .channel {
+    font-weight: 900;;
+  
+    &:before {
+      font-family: 'evericons';
+      content: "\e92e";
+      position: relative;
+      top: 1px;
+    }
+  }

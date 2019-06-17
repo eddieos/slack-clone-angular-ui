@@ -410,3 +410,19 @@ body {
   }
 }
 
+.message-title {
+  font-size: 29px;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.channel {
+  font-weight: 900;;
+
+  &:before {
+    font-family: 'evericons';
+    content: "\e92e";
+    position: relative;
+    top: 1px;
+  }
+}
