@@ -4,8 +4,8 @@
 </div>
 <div class="sidebar-container">
   <div class="channel-button">
-    <a href="javascript:void(0)" class="sidebar-name">Channels</a>
-    <button><span class="ev-circle-plus"></span></button>
+    <a routerLink="/search-channel" class="sidebar-name">Channels</a>
+    <button (click)="openLink('/new-channel')"><span class="ev-circle-plus"></span></button>
   </div>
   <div class="list-item" routerLinkActive="active">
     <a class="text-nowrap" routerLink="channel/general">
@@ -33,8 +33,8 @@
   </div>
 
   <div class="channel-button">
-    <a href="javascript:void(0)" class="sidebar-name">Direct Messages</a>
-    <button><span class="ev-circle-plus"></span></button>
+    <a routerLink="/new-message" class="sidebar-name">Direct Messages</a>
+    <button (click)="openLink('/new-message')"><span class="ev-circle-plus"></span></button>
   </div>
   <div class="list-item" routerLinkActive="active">
     <a class="text-nowrap" routerLink="message/Theophilus Omoregbee">

@@ -16,6 +16,9 @@ import { HeaderComponent } from './chat/components/header/header.component';
 import { ChatMessageComponent } from './chat/components/chat-message/chat-message.component';
 import { ChatsComponent } from './chat/components/chats/chats.component';
 import { APP_ROUTES } from './app.route';
+import { NewChannelComponent } from './new-channel/new-channel.component';
+import { SearchChannelComponent } from './search-channel/search-channel.component';
+import { NewMessageComponent } from './new-message/new-message.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { APP_ROUTES } from './app.route';
     MessageComponent,
     HeaderComponent,
     ChatMessageComponent,
-    ChatsComponent
+    ChatsComponent,
+    NewChannelComponent,
+    SearchChannelComponent,
+    NewMessageComponent
   ],
   imports: [
     BrowserModule,
