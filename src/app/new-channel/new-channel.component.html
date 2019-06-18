@@ -1,3 +1,42 @@
-<p>
-  new-channel works!
-</p>
+<div class="cancel-button">
+  <a href="#">
+    <i class="ev-circle-x"></i>
+    <span>esc</span>
+  </a>
+</div>
+<div class="create">
+  <div class="create-content">
+    <h1 class="create-content-header">Create a channel</h1>
+    <p class="create-text-tip">
+      Channels are where your members communicate. They’re best when organized around a topic — #marketing, for example.
+    </p>
+    <form class="create-form" action="">
+      <div class="create-input with-channel">
+        <label for="lfname">Name</label>
+        <div class="input-container">
+          <span class="ev-hash"></span>
+          <input id="lfname" name="fname" type="text" placeholder="e.g marketing"/>
+        </div>
+        <small class="text-hint">
+          Names must be lowercase, without spaces or periods, and shorter than 22 characters.
+        </small>
+
+      </div>
+
+      <div class="create-input">
+        <label for="lfname">Purpose</label>
+        <div class="input-container">
+          <input id="lfname" name="fname" type="text" placeholder="e.g marketing"/>
+        </div>
+        <small class="text-hint">
+          What's this channel about?
+        </small>
+      </div>
+      <div class="create-button-group">
+        <button class="btn btn-large">Cancel</button>
+        <button class="btn btn-primary btn-large submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</div>
