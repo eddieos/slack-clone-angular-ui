@@ -7,6 +7,7 @@ import { SearchChannelComponent } from './search-channel/search-channel.componen
 import { NewMessageComponent } from './new-message/new-message.component';
 
 export const APP_ROUTES: Routes = [
+    {path:'', redirectTo:'app', pathMatch:'full'},
     {
         path: 'app', component: ChatComponent, 
         children: [
