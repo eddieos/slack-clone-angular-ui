@@ -7,28 +7,10 @@
     <a routerLink="/search-channel" class="sidebar-name">Channels</a>
     <button (click)="openLink('/new-channel')"><span class="ev-circle-plus"></span></button>
   </div>
-  <div class="list-item" routerLinkActive="active">
-    <a class="text-nowrap" routerLink="channel/general">
-      <span class="sidebar-name channel">general</span>
-      <span class="message-count">1</span>
-    </a>
-  </div>
-  <div class="list-item" routerLinkActive="active">
-    <a class="text-nowrap" routerLink="channel/random">
-      <span class="sidebar-name channel">random</span>
-<!--      <span class="message-count"></span>-->
-    </a>
-  </div>
-  <div class="list-item" routerLinkActive="active">
-    <a class="text-nowrap" routerLink="channel/fun stuff">
-      <span class="sidebar-name channel">fun stuffs</span>
-<!--      <span class="message-count"></span>-->
-    </a>
-  </div>
-  <div class="list-item" routerLinkActive="active">
-    <a class="text-nowrap" routerLink="channel/its just a long text to show ellipse">
-      <span class="sidebar-name channel">its just a long text to show ellipse</span>
-      <span class="message-count">24598</span>
+  <div class="list-item" routerLinkActive="active" *ngFor="let channel of channels">
+    <a class="text-nowrap" routerLink="channel/{{channel.name}}">
+      <span class="sidebar-name channel">{{channel.name}}</span>
+      <span class="message-count" *ngIf="channel.unread">{{channel.unread}}</span>
     </a>
   </div>
 
@@ -36,22 +18,10 @@
     <a routerLink="/new-message" class="sidebar-name">Direct Messages</a>
     <button (click)="openLink('/new-message')"><span class="ev-circle-plus"></span></button>
   </div>
-  <div class="list-item" routerLinkActive="active">
-    <a class="text-nowrap" routerLink="message/Theophilus Omoregbee">
-      <span class="sidebar-name"><span class="status online"></span> Theophilus Omoregbee</span>
-      <span class="message-count">1</span>
+  <div class="list-item" routerLinkActive="active" *ngFor="let dm of directMessages">
+    <a class="text-nowrap" routerLink="message/{{dm.name}}">
+      <span class="sidebar-name"><span class="status" [ngClass]="{online: dm.active}"></span> {{dm.name}}</span>
+      <span class="message-count" *ngIf="dm.unread">{{dm.unread}}</span>
     </a>
   </div>
-  <div class="list-item" routerLinkActive="active">
-    <a class="text-nowrap"  routerLink="message/Collins">
-      <span class="sidebar-name"><span class="status offline"></span> Collins</span>
-    </a>
-  </div>
-  <div class="list-item" routerLinkActive="active">
-    <a class="text-nowrap" routerLink="message/John Smith">
-      <span class="sidebar-name"><span class="status offline"></span> John Smith</span>
-<!--      <span class="message-count"></span>-->
-    </a>
-  </div>
-
 </div>
