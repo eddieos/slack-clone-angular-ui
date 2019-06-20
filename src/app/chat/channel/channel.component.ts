@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { IChatMessage } from '../components/chat-message/chat-message.component';
 import messages from 'src/app/constants/messages';
 import { ActivatedRoute } from '@angular/router';
+import { IChatMessage } from 'src/app/interfaces/ichat-message';
 
 @Component({
   selector: 'app-channel',

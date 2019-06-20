@@ -1,12 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
-export interface IChatMessage {
-  message: string;
-  image: string;
-  timestamp: Date | string;
-  username: string;
-  userId: string;
-}
+import { IChatMessage } from 'src/app/interfaces/ichat-message';
 
 @Component({
   selector: 'chat-message',
