@@ -4,5 +4,7 @@ export interface INotification {
     name: string;
     unread?: number;
     active?: boolean;  // online or offline users for dm
-    type: NotificationType
+    members?: number; // total numbers of a channel 
+    type: NotificationType;
+    [key: string]: any;
 }

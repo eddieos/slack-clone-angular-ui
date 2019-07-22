@@ -1,6 +1,6 @@
 <div>
   <h2 class="header-title" [ngClass]="{'channel': type === 'channel'}">{{title}}</h2>
   <div *ngIf="type === 'channel'">
-    <p class="member-count"><span class="ev-user"></span>12</p>
+    <p class="member-count"><span class="ev-user"></span>{{members}}</p>
   </div>
 </div>

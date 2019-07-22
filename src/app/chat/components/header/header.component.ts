@@ -9,6 +9,7 @@ type IType = 'channel' | 'message'
 })
 export class HeaderComponent implements OnInit {
   @Input() title: string = 'general'
+  @Input() members: number = 0
   @Input() type:IType = 'channel' 
 
   constructor() { }

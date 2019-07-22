@@ -11,6 +11,7 @@ import { IChatMessage } from 'src/app/interfaces/ichat-message';
 export class ChannelComponent implements OnInit {
   channelId: string;
   messages: IChatMessage[] = messages
+  members: number = 13
 
   constructor(private _activatedRoute: ActivatedRoute) { }
 
